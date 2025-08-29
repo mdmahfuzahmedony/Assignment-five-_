@@ -4,7 +4,7 @@ const heart_icon = document.querySelectorAll(".heart_icon");
 
 heart_icon.forEach((item) => {
   item.addEventListener("click", function () {
-    const heartIcon = document.getElementById("heart");
+    const heartIcon = document.getElementById("Heart_icon");
     let heartVaule = parseInt(heartIcon.innerText);
     heartVaule++;
 
@@ -32,6 +32,10 @@ copy_btn.forEach((item) => {
   });
 });
 
+
+// ---------------main-part------------------
+
+
 const copy_call = document.querySelectorAll(".copy_call");
 let coines_main_value = 100;
 
@@ -43,7 +47,7 @@ copy_call.forEach((item) => {
     const cards = item.closest(".card");
     const service_names = cards.querySelector(".service_name").innerText;
     const service_numbers = cards.querySelector(".service_num").innerText;
-    const coines = document.getElementById("coine");
+    const coins = document.getElementById("coin_count");
 
     if (coines_main_value < 20) {
       alert("You don't have enough coins to make a call.");
@@ -51,7 +55,7 @@ copy_call.forEach((item) => {
     }
 
     coines_main_value -= 20;
-    coines.innerText = coines_main_value;
+    coins.innerText = coines_main_value;
 
     alert(`📞 Calling ${service_names} ${service_numbers}...`);
 
@@ -59,13 +63,13 @@ copy_call.forEach((item) => {
 
     const itemDiv = document.createElement("div");
     itemDiv.className =
-      "flex items-center justify-between bg-[gray]/5 px-3 py-2 rounded-md shadow-sm";
+      "flex items-center justify-between bg-[gray]/15 px-3 py-2 rounded-md shadow-sm bg-gray-200";
 
     const left_side = document.createElement("div");
     left_side.innerHTML = `<p class="font-bold">${service_names}</p><p class="text-xs text-gray-600">${service_numbers}</p>`;
 
     const timetext = document.createElement("p");
-    timetext.className = "text-xs text-gray-500";
+    timetext.className = "text-xs text-gray-700";
     timetext.innerText = time;
 
     itemDiv.appendChild(left_side);

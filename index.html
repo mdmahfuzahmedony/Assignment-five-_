@@ -22,7 +22,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- ------------------font-Awsome--------------------- -->
+    <!-- ------------------font-Awesome_icon--------------------- -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -38,9 +38,13 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- -----------style_Css--------- -->
+     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<!-- ---------------------------Navigation_bar--------------------------------- -->
+<body class="font">
+
+<!-- ---------------------------Navbar--------------------------------- -->
 
  <section class="flex flex-col md:flex-row justify-between items-center max-w-[1400px] mx-auto ">
       
@@ -58,19 +62,19 @@
       </div>
 
       <div class="flex justify-between gap-[20px] items-center">
+        
         <div
           class="bg-[#ECFFF0] flex justify-center gap-[10px] items-center rounded-[30px] w-[130px] h-[50px]"
         >
-          <span class="font-bold text-[20px] text-black" id="heart">0</span>
+          <span class="font-bold text-[20px] text-black" id="Heart_icon">0</span>
           <p class="text-red-500 text-[30px]">
             <i class="fa-solid fa-heart"></i>
           </p>
         </div>
-
         <div
           class="bg-[#ECFFF0] flex justify-center gap-[10px] items-center rounded-[30px] w-[130px] h-[50px]">
       
-          <span class="font-bold text-[20px] text-black" id="coine">100</span>
+          <span class="font-bold text-[20px] text-black" id="coin_count">100</span>
           <img
             src="B12-A5-Emergency-Hotline/assets/coin.png"
             width="30px"
@@ -81,7 +85,7 @@
         <div
           class="bg-green-500 flex justify-center gap-[10px] items-center rounded-[30px] w-[130px] h-[50px]"
         >
-          <span id="copy_count" class="font-medium text-[20px] text-white ">0</span>
+          <span class="font-medium text-[20px] text-white" id="copy_count">0</span>
           <p class="font-medium text-[20px] text-white">copy</p>
         </div> 
 
@@ -89,7 +93,7 @@
 
   </section>
 
-  <!-- -----------------header_part--------------------- -->
+  <!-- -----------------hero-Section--------------------- -->
    <section class="max-w-full bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-[20px] mt-[20px]">
 
       <div class="max-w-[1400px]  mx-auto flex flex-col text-center ">
@@ -107,7 +111,7 @@
 
      <section class="max-w-[1400px] mx-auto  flex justify-between gap-[30px] mt-[20px] bg-[#F5FFF6] flex-col md:flex-row">
 
-      <!-- ------------left_side / card_section ----------------- -->
+      <!-- ------------ card_section ----------------- -->
 
       <section class="left_side w-full md:w-3/4 grid lg:grid-cols-3 grid-cols-2 gap-[20px] ">
 
@@ -367,7 +371,6 @@
           </div>
       </div>
       
-      
       <div
           class="card p-5 rounded-lg bg-white shadow-md flex flex-col justify-between"
         >
@@ -399,13 +402,14 @@
             </button>
           </div>
       </div>
+
       </section>
 
 
-      <!-- ---------------right-side/ call _ history-------------- -->
+      <!-- ---------------History_Section-------------- -->
 
       <section class="w-full md:w-1/4 bg-white shadow-md rounded-lg p-4 mt-4">
-        <div class="flex justify-between items-center border-b pb-2">
+        <div class="flex justify-between items-center ">
           <h1 class="font-bold flex items-center gap-2">
             <i class="fa-regular fa-clock"></i>Call History
           </h1>
@@ -417,8 +421,7 @@
           </button>
         </div>
         <div id="history-list" class="mt-4 space-y-3 text-sm"></div>
-      </section>
-      </section> 
+      
     </section>
 
 
